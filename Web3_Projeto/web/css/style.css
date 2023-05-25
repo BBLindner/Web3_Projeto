@@ -1,0 +1,31 @@
+html, body {
+    background-image: url("../img/sky_day.png");
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+
+#img-nuvem {
+    width: 100;
+}
+
+#nuvem{
+    position: relative;
+    left: 0px;
+    top: 0;
+    z-index: 0;
+    animation-name: slidein;
+    animation-duration: 14s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+                       
+@keyframes slidein {
+  0%   {left:0%;}
+  100% {left:100%;}
+}
+
+#gen {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="icon" href="img/button_cloud_export.gif" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="genero">
+        <div class="bannerAdd">
+            <label for="nome"><b>Nome do Filme</b></label>
+            <input type="text" placeholder="Nome do filme" name="nome" maxlength="50" required>
+
+            <label for="duração"><b>Duração</b></label>
+            <input type="number" placeholder="Duração do filme em minutos" name="duracao" maxlength="5" required>
+
+
+            <form method="get">
+                <label for="gen"><b>Escolha 2 gêneros</b></label><br>
+                <select id="gen" name="gen1">
+                    <option value="acao">Ação</option>
+                    <option value="animacao">Animação</option>
+                    <option value="aventura">Aventura</option>
+                    <option value="comedia">Comédia</option>
+                    <option value="drama">Drama</option>
+                    <option value="fantasia">Fantasia</option>
+                    <option value="misterio">Mistério</option>
+                    <option value="nacional">Nacional</option>
+                    <option value="policial">Policial</option>
+                    <option value="Romance">Romance</option>
+                    <option value="Terror">Terror</option>
+                    <option value="Thriller">Thriller</option>
+                </select>
+                <select id="gen" name="gen2">
+                    <option value="acao">Ação</option>
+                    <option value="animacao">Animação</option>
+                    <option value="aventura">Aventura</option>
+                    <option value="comedia">Comédia</option>
+                    <option value="drama">Drama</option>
+                    <option value="fantasia">Fantasia</option>
+                    <option value="misterio">Mistério</option>
+                    <option value="nacional">Nacional</option>
+                    <option value="policial">Policial</option>
+                    <option value="Romance">Romance</option>
+                    <option value="Terror">Terror</option>
+                    <option value="Thriller">Thriller</option>
+                </select>
+            </form>
+
+
+            <label for="sinopse"><b>Sinopse</b></label>
+            <textarea id="sinopse" placeholder="Sinopse do filme" name="sinopse" rows="8" cols="40"
+                required></textarea><br>
+
+            <label for="capa"><b>Capa</b></label>
+            <input type="file" placeholder="Esolha um arquivo" name="capa" required><br><br>
+
+            <button class="sinopse" type="submit">Adicionar Filme</button>
+            <button class="sinopse" type="button" onclick="window.location.href='index.html'">Voltar</button>
+        </div>
+    </div>
+    <div class="nuvemHolder">
+        <img src="img/clouds_day.png" class="imgNuvem1">
+        <img src="img/clouds_day.png" class="imgNuvem2">
+
+        <img src="img/clouds_day.png" class="imgNuvem3">
+        <img src="img/clouds_day.png" class="imgNuvem4">
+    </div>
+
+</body>
+
+</html>
